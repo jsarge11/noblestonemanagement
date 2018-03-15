@@ -1,0 +1,84 @@
+.App {
+  text-align: left;
+}
+
+.header-logo {
+  margin-top: 20px;
+  height: 10vh;
+  align-content: left;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  height:17vh;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+#section1 {
+  color: lightgrey;
+  height: 65vh;
+
+}
+#footer { 
+  height: 18vh;
+  background-image: url("./images/top.jpeg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.menu {
+  text-align: right;
+  padding-top: 25px;
+  float: right;
+}
+ul {
+  float: right;
+  font-family: doughboy-regular;
+  color: lightgrey;
+  padding-bottom: 10px;
+}
+
+ul:hover {
+  border-bottom: 5px solid lightgrey;
+  border-left-width: 10vh;
+}
+
+@font-face {
+  font-family: swiss-721-bt;
+  src: url("./fonts/swiss-721-bt.ttf") format("truetype");
+}
+@font-face {
+  font-family: doughboy-regular;
+  src: url("./fonts/doughboy-regular.ttf") format("truetype");
+}
+.box {
+  float: right;
+  height: 60%;  
+  width: 15%;
+  margin: 5vh 7vh;
+  border: 3px solid orange;
+  background-size: 40vh;
+ 
+}
+#box1 {
+  background-image: url("./images/photo3.jpeg");
+}
+#box2 {
+  background-image: url("./images/photo5.jpeg");
+  background-position: -90px;
+}
+#box3 {
+  background-image: url("./images/photo6.jpeg");
+}
+#box4 {
+  background-image: url("./images/photo 2.jpeg");
+ 
+}
