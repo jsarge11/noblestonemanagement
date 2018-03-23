@@ -5,9 +5,19 @@ import Box from './Box'
 class Body extends Component {
    
     handleInformational = (props) => {
-        console.log("Running");
+        document.getElementById("informational").style.visibility = "visible";
+        
         if (props === 1) {
-            alert(this.state.informational[0]);
+            document.getElementById("informational").textContent = this.state.informational[0];        
+        }
+        else if (props === 2) {
+            document.getElementById("informational").textContent = this.state.informational[1];
+        }
+        else if (props === 3) {
+            document.getElementById("informational").textContent = this.state.informational[2];
+        }
+        else if (props === 4) {
+            document.getElementById("informational").textContent = this.state.informational[3];
         }
     }
     state = {
@@ -21,9 +31,9 @@ class Body extends Component {
         return (
             <div id="section1">
                 <Box onClick={() => this.handleInformational(1)} number="1" />
-                <Box number="2" />
-                <Box number="3" />
-                <Box number="4" />
+                <Box onClick={() => this.handleInformational(2)} number="2" />
+                <Box onClick={() => this.handleInformational(3)} number="3" />
+                <Box onClick={() => this.handleInformational(4)} number="4" />
                 <div id="informational"></div>
             </div>
         );

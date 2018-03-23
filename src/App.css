@@ -26,6 +26,8 @@
 #section1 {
   color: lightgrey;
   height: 65vh;
+  text-align: center;
+  box-shadow: 0px 0px 200px 15px grey; 
 
 }
 #footer { 
@@ -33,6 +35,8 @@
   background-image: url("./images/top.jpeg");
   background-size: 100vw;
   background-repeat: no-repeat;
+  clear: both;
+  background-color: white;
 }
 .menu {
   text-align: right;
@@ -49,6 +53,7 @@ ul {
 ul:hover {
   border-bottom: 5px solid lightgrey;
   border-left-width: 10vh;
+  cursor: pointer;
 }
 
 @font-face {
@@ -60,25 +65,41 @@ ul:hover {
   src: url("./fonts/doughboy-regular.ttf") format("truetype");
 }
 .box {
-  float: right;
   height: 60%;  
   width: 15%;
-  margin: 5vh 7vh;
+  margin: 4%;  
   border: 3px solid orange;
-  background-size: 40vh;
+  background-size: 43vh;
+  box-shadow: 0px 0px 40px 20px grey; 
+  display: inline-block;
  
 }
 #box1 {
   background-image: url("./images/photo3.jpeg");
+  background-position: -25px -100px;
 }
+
 #box2 {
   background-image: url("./images/photo5.jpeg");
-  background-position: -90px;
+  background-position: -50px;
 }
 #box3 {
   background-image: url("./images/photo6.jpeg");
 }
 #box4 {
   background-image: url("./images/photo 2.jpeg");
- 
+}
+#box1:hover, #box2:hover, #box3:hover, #box4:hover {
+  box-shadow: 0px 0px 10px 1px grey; 
+  cursor: pointer;
+}
+#informational {
+  height: 24.5%;
+  color: black;
+  font-family: swiss-721-bt;
+  visibility: hidden;
+  border: 5px solid silver; 
+  display: inline-table;
+  float: right;
+  background-color: white;
 }
