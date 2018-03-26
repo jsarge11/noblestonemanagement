@@ -1,6 +1,6 @@
 {
-  "short_name": "Noble Stone",
-  "name": "Noble Stone Management",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
