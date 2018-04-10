@@ -1,3 +1,9 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+} 
 .App {
   text-align: left;
 }
@@ -25,18 +31,10 @@
 }
 #section1 {
   color: lightgrey;
-  height: 65vh;
+  height: 70vh;
   text-align: center;
-  box-shadow: 0px 0px 200px 15px grey; 
+  margin-bottom: -8%;
 
-}
-#footer { 
-  height: 18vh;
-  background-image: url("./images/top.jpeg");
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  clear: both;
-  background-color: white;
 }
 .menu {
   text-align: right;
@@ -72,7 +70,7 @@ ul:hover {
   background-size: 43vh;
   box-shadow: 0px 0px 40px 20px grey; 
   display: inline-block;
- 
+  
 }
 #box1 {
   background-image: url("./images/photo3.jpeg");
@@ -93,13 +91,64 @@ ul:hover {
   box-shadow: 0px 0px 10px 1px grey; 
   cursor: pointer;
 }
-#informational {
-  height: 24.5%;
-  color: black;
-  font-family: swiss-721-bt;
-  visibility: hidden;
-  border: 5px solid silver; 
-  display: inline-table;
-  float: right;
-  background-color: white;
+#infoWrapper {
+  display: flex;
+  padding-top: 10%;
 }
+
+#informational {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  background: lightgrey;
+  height: 0;
+  color: white;
+  text-shadow: 1px 1px black;
+  padding: 0 10%;
+  overflow: hidden;
+
+  transition-delay: 5000ms;
+  transition-property: padding;
+
+  -webkit-transition: all 300ms;
+  -ms-transition: all 300ms;
+  transition: all 300ms;
+  
+}
+#informational.open {
+
+  height: 10vh;
+  overflow: scroll;
+  padding: 3%;
+  -webkit-transition: all 300ms;
+  -ms-transition: all 300ms;
+  transition: all 300ms;
+
+  border: 10px ridge lightgrey;
+}
+
+.footerWrapper {
+  height: 30vh;
+  position: relative;
+}
+#footer { 
+  height: 60%;
+  background-image: url("./images/top.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: 5%;
+  position: relative;
+  z-index: 999;
+}                                      
+#bottomfooter {
+  padding-top: 20px;
+  height: 40%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}             
