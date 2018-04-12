@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css'
 import Box from './Box'
-import Footer from './Footer'
 
 class Body extends Component {
     state = {
@@ -71,7 +70,6 @@ class Body extends Component {
                 <div id="wrapper" className="infoWrapper">
                     <div id="informational"></div>
                 </div>
-                <Footer />
             </div>
         );
     }
